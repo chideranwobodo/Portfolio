@@ -1,0 +1,113 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: yellowgreen;
+}
+header{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+header nav a:hover{
+    text-decoration: none;
+    background-color: yellowgreen;
+    color: black;
+}
+#me, #you{
+    display: none;
+}
+main article{
+    margin: 20px 10px;
+    padding: 10px;
+    font-style: normal;
+    font-size: larger;
+    align-items: center;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+main article p{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+section div{
+    text-align: right;
+    align-content: space-around;
+    font-size: medium;
+}
+section div button{
+    text-align: right;
+    background-color: yellowgreen;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+section div button:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+section div textarea{
+    background-color: yellowgreen;
+    margin-top: 250px;
+    margin-bottom: -10px;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+@media(max-width:976px){
+    body{
+        font-size: 12px;
+    }
+    header nav{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 69px;
+        background-color: blue;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    header nav{
+        display: none;
+    }
+    header nav a{
+        margin: 10px;
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+    header nav a:hover{
+        background-color: yellowgreen;
+        color: black;
+        text-decoration: none;
+    }
+    #you{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    #me:checked ~ nav{
+        display: flex;
+    }
+    main article{
+        font-size: larger;
+        padding: 20px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+}

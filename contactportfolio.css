@@ -1,0 +1,91 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: yellowgreen;
+}
+header{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+header nav a:hover{
+    text-decoration: none;
+    background-color: yellowgreen;
+    color: black;
+}
+#me, #you{
+    display: none;
+}
+body main nav{
+    font-size: large;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    align-content: space-around;
+    text-transform: capitalize;
+}
+body main nav a{
+    text-decoration: none;
+    /* margin: 20px; */
+    color: black;
+}
+body main nav a:hover{
+    background-color: blue;
+    color: white;
+    text-transform: uppercase;
+}
+body main nav a:nth-child(1){
+    /* margin-bottom: 20px; */
+}
+@media(max-width:976px){
+    body{
+        font-size: 12px;
+    }
+    header nav{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 69px;
+        background-color: blue;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    header nav{
+        display: none;
+    }
+    header nav a{
+        margin: 10px;
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+    header nav a:hover{
+        background-color: yellowgreen;
+        color: black;
+        text-decoration: none;
+    }
+    #you{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    #me:checked ~ nav{
+        display: flex;
+    }
+}
